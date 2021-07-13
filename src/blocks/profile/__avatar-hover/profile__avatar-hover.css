@@ -1,0 +1,15 @@
+.profile__avatar-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.profile__avatar-hover:hover::before  {
+  position: absolute;
+  /* opacity: .8; */
+  content: url('../../../images/Vector-avatar-hover.svg');
+}
+
+

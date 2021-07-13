@@ -1,0 +1,11 @@
+.cards__like {
+  min-width: 22px;
+  min-height: 19px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  background: url('../../../images/heart.svg') center no-repeat;
+}
+.cards__like:hover {
+  opacity: .5;
+}

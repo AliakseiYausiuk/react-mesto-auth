@@ -1,0 +1,16 @@
+.pop-up__span-error {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF0000;
+  transition: opacity 0.3s;
+  opacity: 0;
+  max-width: calc(100% - 44px);
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .pop-up__span-error {
+    max-width: calc(100% - 72px);
+  }
+}

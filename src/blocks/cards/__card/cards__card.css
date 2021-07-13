@@ -1,0 +1,14 @@
+.cards__card {
+  max-width: 282px;
+  color: #000;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+@media (min-width: 321px) {
+  .cards__card {
+    margin: 0;
+  }
+}
