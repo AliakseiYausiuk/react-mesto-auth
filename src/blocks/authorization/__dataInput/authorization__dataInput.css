@@ -1,0 +1,13 @@
+.authorization__dataInput {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 20px 0;
+    width: 358px;
+    border: none;
+    border-bottom: 2px solid #CCC;
+    outline: none;
+    background: none;
+    padding: 13px 0;
+    color: #fff;
+}

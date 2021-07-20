@@ -1,0 +1,5 @@
+.pop-up__container_authorization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
