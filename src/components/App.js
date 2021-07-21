@@ -165,9 +165,6 @@ function App() {
         // свайпнули модалку через 1 сек
         setTimeout(closeAllPopups, 1000);
       }
-      if(res.status === 400) {
-        console.log('Вас закибербуллили.Ошибка 400.')
-      }
     }).catch((err)=> {
       handleInfoTooltipContent({iconPath: regIsFailed, text: 'Что-то пошло не так! Попробуйте ещё раз.'})
       handlerInfoTooltipOpen();

@@ -7,7 +7,7 @@ const PopupWithForm = ({isOpen, onClose, name, onSubmit, textBtn, children , tit
       <h2 className="pop-up__title">
         {title}
       </h2>
-      <form id="edit-form" className="pop-up__form" action="#" name={name} noValidate onSubmit={onSubmit}>
+      <form id={name} className="pop-up__form" action="#" name={name} onSubmit={onSubmit}>
         {children}
         <button className="pop-up__btn-save" type="submit">
           {textBtn}

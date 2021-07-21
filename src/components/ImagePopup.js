@@ -6,9 +6,9 @@ const ImagePopup = ({card, onClose}) => {
         <div className="pop-up__foto-container">
           <button id="pop-up-foto__btn-close" className="pop-up__btn-close" type="button" aria-label="Close" onClick={onClose}></button>
           <figure className="pop-up__block-figure">
-            <img className="pop-up__img" src={card ? card.link : ''} alt="Вид на горы через деревья"/>
+            <img className="pop-up__img" src={card?.card.link} alt={card?.card.name}/>
             <figcaption className="pop-up__text-img">
-              {card ? card.name : ''}
+              {card?.card.name}
             </figcaption>
           </figure>
         </div>

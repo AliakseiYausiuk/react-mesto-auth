@@ -1,11 +1,11 @@
 export const BASE_URL = 'https://auth.nomoreparties.co';
 
-// const checkRequestResult = (res) => {
-//   if (res.ok) {
-//     return res.json();
-//   }
-//   return Promise.reject(`Error ${res.status}`);
-// }
+const checkRequestResult = (res) => {
+  if (res.ok) {
+    return res.json();
+  }
+  return Promise.reject(`Error ${res.status}`);
+}
 
 export const register = (email, password) => {
   return fetch(`${BASE_URL}/signup`, {
@@ -15,7 +15,7 @@ export const register = (email, password) => {
     },
     body: JSON.stringify({password, email})
   })
-  //.then(checkRequestResult)
+  .then(checkRequestResult);
 }; 
 
 export const authorize = (email, password) => {
@@ -25,7 +25,7 @@ export const authorize = (email, password) => {
     },
     body: JSON.stringify({ email, password })
   })
-  //.then(checkRequestResult)
+  .then(checkRequestResult)
   .then((res) => {
     if (res.status === 400) {
       throw new Error('Не все поля заполнены');
@@ -52,6 +52,5 @@ export const getContent = (token) => {return fetch(`${BASE_URL}/users/me`, {
 .then((res) => {
   return res.json()
 })
-  //.then(checkRequestResult)
   .then((data) => data)
 }
