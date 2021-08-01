@@ -15,3 +15,4 @@
 6. БЭМ
 7. BrowserRouter
 
+[Ссылка на проект](https://aliakseiyausiuk.github.io/react-mesto-auth/)
